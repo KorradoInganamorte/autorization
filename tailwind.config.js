@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{tsx}"],
+  content: ["./index.html","./src/**/*.{ts,tsx,sass}"],
   theme: {
     fontSize: {
       sm: '1.2rem',
@@ -24,12 +24,7 @@ export default {
       'monitor': '1440px',
       'screen': '1900px',
     },
-    extend: {
-      dropShadow: {
-        'most': '6px 12px 4px rgba(0, 0, 0, 0.25)'
-      }
-    },
+    extend: {},
   },
   plugins: [],
-}
-
+};
